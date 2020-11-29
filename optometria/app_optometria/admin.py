@@ -1,9 +1,8 @@
 from django.contrib import admin
-
+from .models import Paciente, Medico, Turno, Historia_clinica
 # Register your models here.
-def test(num):
-    return num, num*2, num*4
 
-
-
-print(test(5))
+admin.site.register(Paciente)
+admin.site.register(Medico)
+admin.site.register(Turno)
+admin.site.register(Historia_clinica)
