@@ -1,12 +1,23 @@
 from django.db import models
+from django.db.models import fields
 from app_optometria.models import Paciente
 
 
 # Create your models here.
 
+class Tipo_lente(models.Model):
+    distancia = models.CharField(max_length=64)
+    lado = models.CharField(max_length=64)
+    armazon = models.CharField(max_length=64)
+
+    def __str__(self):
+        return f"{self.distancia} {self.lado} {self.armazon}"
+
 
 class Tipo_producto(models.Model):
     nombre = models.CharField(max_length=64)
+    tipo_lente = models.ForeignKey(
+        Tipo_lente, on_delete=models.CASCADE, related_name="lentes", null=True)
 
     def __str__(self):
         return f"{self.nombre}"
