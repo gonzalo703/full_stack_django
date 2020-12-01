@@ -6,3 +6,4 @@ from django.http import HttpResponse
 
 def productos(request):
     return render(request, "productos/productos.html")
+
