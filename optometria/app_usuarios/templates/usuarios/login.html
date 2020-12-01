@@ -4,13 +4,14 @@
 
 
 <div class="container">
-
-    <form action="{% url 'login' %}" method="post">
+    <h3>Ingreso al sistema</h3>
+    <br>
+    <form action="{% url 'login' %}" method="post" class="loguin">
         {% csrf_token %}
         <div class="form-group">
             <label for="exampleInputEmail1">Nombre usuario</label>
             <input type="text" class="form-control" name="username" id="exampleInputEmail1"
-                aria-describedby="emailHelp">
+                    aria-describedby="emailHelp">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Contraseña</label>
@@ -22,10 +23,11 @@
         </div>
         <button type="submit" class="btn btn-secondary">Ingresar</button>
     </form>
-
+    <br>
     {% if mensaje %}
     <div>{{ mensaje }}</div>
     {% endif %}
 </div>
+
 
 {% endblock %}

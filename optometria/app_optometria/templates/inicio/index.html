@@ -2,11 +2,17 @@
 
 {% block body %}
 
-
 <div class="container">
-    <h1>Bienvenidos al centro optico Sarasa</h1>
+    <div class="titulo">
+        <h1 class="Bienvenidos">Bienvenidos al Centro Óptico Eyes</h1>
+    </div>
+    <br><br>
 
+    <h5 class="titulo">Si eres usuario:</h5>
     <button type="button" class="btn btn-secondary"><a href="{% url 'login' %}">Ingresar</a></button>
-
+    <br><br>
+    <h5 class="titulo">Si eres administrador:</h5>
+    <button type="button" class="btn btn-secondary"><a href="#">Ingresar</a></button>
 </div>
+
 {% endblock %}

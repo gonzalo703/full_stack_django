@@ -34,3 +34,15 @@ def logout_view(request):
     return render(request, "usuarios/login.html", {
         "mensaje": "Usted ha sido desconectado"
     })
+
+def medico(request):
+    return render(request, "usuarios/medico.html")
+
+def secretaria(request):
+    return render(request, "usuarios/secretaria.html")
+
+def vendedor(request):
+    return render(request, "usuarios/vendedor.html")
+
+def taller(request):
+    return render(request, "usuarios/taller.html")

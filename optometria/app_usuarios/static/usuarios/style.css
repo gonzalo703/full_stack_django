@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+  }
+
+  a:link,
+  a:visited,
+  a:active {
+      text-decoration: none;
+      color: white;
+  }
+
+body {
+    background-image: url(../img/abstract-19175_1920.jpg);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin-top:2%;
+}
+
+.loguin .secretaria {
+  width: 35%;
+}

@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: url(../images/satellite-3128213_1920.jpg);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 5%;
+}
+
+.titulo {
+    color: white;
+    font-size: 25px;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}

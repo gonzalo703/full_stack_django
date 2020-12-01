@@ -1,12 +1,14 @@
 {% extends "usuarios/layout.html" %}
 
 {% block body %}
-<h1>Bienvenid@, {{ request.user.first_name }} </h1>
-
-<ul>
-    <li>Nombre de usuario: {{ request.user.username }} </li>
-    <li>Email: {{ request.user.email }} </li>
-</ul>
-
-<a href="{% url 'logout' %}">Desconectarse</a>
+<div class="container">
+    <h1>Bienvenid@, {{ request.user.first_name }} </h1>
+    <br>
+    <ul>
+        <li>Nombre de usuario: {{ request.user.username }} </li>
+        <li>Email: {{ request.user.email }} </li>
+    </ul>
+    <br>
+    <button type="button" class="btn btn-secondary"><a href="{% url 'logout' %}">Desconectarse</a></button>
+</div>
 {% endblock %}
