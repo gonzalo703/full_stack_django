@@ -6,12 +6,14 @@ from app_optometria.models import Paciente
 # Create your models here.
 
 class Tipo_lente(models.Model):
-    distancia = models.CharField(max_length=64)
-    lado = models.CharField(max_length=64)
-    armazon = models.CharField(max_length=64)
+    derecha = models.BooleanField(default=False)
+    izquierda = models.BooleanField(default=False)
+    lejos = models.BooleanField(default=False)
+    cerca = models.BooleanField(default=False)
+    armazon = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.distancia} {self.lado} {self.armazon}"
+        return f"{self.derecha} {self.lejos} {self.armazon}"
 
 
 class Tipo_producto(models.Model):

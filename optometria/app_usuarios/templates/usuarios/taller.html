@@ -1,0 +1,47 @@
+{% extends "usuarios/layout.html" %}
+
+{% block body %}
+
+<div class="container">
+    <h4>Sistema de Taller</h4>
+    <div>
+        <table class="table table-striped table-light">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                </tr>
+                </thead>
+                <tbody">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Lentes, cerca, armazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Lentes, cerca, armazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Lentes, cerca, armazon</td>
+                </tr>
+                <thead class="table-secondary">
+                    <tr>
+                        <th scope="row">Subtotal</th>
+                        <td> 
+                            <select class="form-control form-control-sm">
+                                <option>Pendiente</option>
+                                <option>Pedido</option>
+                                <option>Taller</option>
+                                <option>Finalizado</option>
+                            </select>
+                        </td>
+                    </tr>
+                </thead>
+            </tbody>
+        </table>
+    </div>
+    <button type="button" class="btn btn-secondary">Confirmar cambios</button>
+</div>
+
+{% endblock %}
