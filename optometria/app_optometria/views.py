@@ -21,7 +21,10 @@ def secretaria(request):
 
 
 def vendedor(request):
-    return render(request, "inicio/vendedor.html")
+    return render(request, "inicio/vendedor.html"{
+        "pacientes": Paciente.objects.all(),
+        "medicos": Medico.objects.all()
+    })
 
 
 def taller(request):

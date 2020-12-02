@@ -3,10 +3,10 @@
 {% block body %}
 
 
-<div class="container">
+<div class="container d-flex flex-column align-items-center">
     <h3>Ingreso al sistema</h3>
     <br>
-    <form action="{% url 'login' %}" method="post" class="loguin">
+    <form action="{% url 'login' %}" method="post" class="loguin" style="width:35%">
         {% csrf_token %}
         <div class="form-group">
             <label for="exampleInputEmail1">Nombre usuario</label>
