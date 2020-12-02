@@ -1,47 +1,43 @@
-{% extends "usuarios/layout.html" %}
+{% extends "inicio/layout.html" %}
 
 {% block body %}
 
 <div class="container">
     <h3>Sistema de ventas</h3>
 
-    <h5>Productos</h5>   
+    <h5>Productos</h5>
     <select class="form-control form-control-sm">
         <option>Lentes</option>
         <option>Lagrimas</option>
         <option>Liquido limpia cristales</option>
     </select>
     <br><br>
-    <h5>Lentes</h5>   
+    <h5>Lentes</h5>
     <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">Ambos lados</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">Izquierda</label>
-      </div>
-      <div class="form-check">
+    </div>
+    <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">Derecha</label>
-      </div>
-      <div class="form-check">
+    </div>
+    <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">Lejos</label>
-      </div>
-      <div class="form-check">
+    </div>
+    <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">Cerca</label>
-      </div>
-      <div class="form-check">
+    </div>
+    <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">Armazon</label>
-      </div>
-      <br>
+    </div>
+    <br>
 
-      <div>
+    <div>
         <button type="button" class="btn btn-secondary">Cargar</button>
-      </div>
+    </div>
 
     <br>
     <div>
@@ -54,8 +50,8 @@
                     <th scope="col">Forma pago</th>
                     <th scope="col">Estado</th>
                 </tr>
-                </thead>
-                <tbody">
+            </thead>
+            <tbody">
                 <tr>
                     <th scope="row">1</th>
                     <td>Lentes, cerca, armazon</td>
@@ -82,7 +78,7 @@
                         <th scope="row">Subtotal</th>
                         <th></th>
                         <th>3500</th>
-                        <td> 
+                        <td>
                             <select class="form-control form-control-sm">
                                 <option>Tarjeta credito</option>
                                 <option>Tarjeta debito</option>
@@ -90,7 +86,7 @@
                                 <option>Efectivo</option>
                             </select>
                         </td>
-                        <td> 
+                        <td>
                             <select class="form-control form-control-sm">
                                 <option>Pendiente</option>
                                 <option>Pedido</option>
@@ -100,7 +96,7 @@
                         </td>
                     </tr>
                 </thead>
-            </tbody>
+                </tbody>
         </table>
     </div>
     <br>
